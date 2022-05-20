@@ -1,0 +1,12 @@
+[Build DataFrame from input]
+import pandas as pd
+
+n = int(input(''))
+dict3 = {}
+for _ in range(n):
+    Deck, *line = input('Deck and trucks ').split()
+    Trucks = list(map(str, line))
+    dict3[Deck] = Trucks
+print(dict3)
+brics3 = pd.DataFrame(dict3)
+print(brics3)
